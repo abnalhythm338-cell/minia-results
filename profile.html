@@ -39,7 +39,6 @@ flex-direction:row;
 align-items:flex-start;
 gap:20px;
 padding:15px;
-width:100%;
 max-width:1400px;
 margin:auto;
 }
@@ -89,13 +88,12 @@ background:#fff;
 margin-bottom:8px;
 padding:10px;
 border-radius:8px;
-font-size:14px;
 cursor:pointer;
 transition:.3s;
 }
 
 .menu li:hover,
-.active{
+.menu .active{
 background:#1976d2;
 color:#fff;
 }
@@ -110,6 +108,7 @@ background:#fff;
 border-radius:12px;
 overflow:hidden;
 box-shadow:0 2px 8px rgba(0,0,0,.15);
+margin-bottom:20px;
 }
 
 .card h3{
@@ -122,29 +121,24 @@ font-size:18px;
 table{
 width:100%;
 border-collapse:collapse;
-table-layout:fixed;
 }
 
 td{
 padding:12px;
 border-bottom:1px solid #eee;
-font-size:15px;
-word-break:break-word;
 }
 
 td:first-child{
-width:35%;
 font-weight:bold;
 color:#1565c0;
+width:35%;
 }
 
 @media(max-width:768px){
 
 .container{
-display:flex;
 flex-direction:row;
 gap:10px;
-padding:10px;
 }
 
 .sidebar{
@@ -152,28 +146,15 @@ width:160px;
 min-width:160px;
 }
 
-.content{
-flex:1;
-min-width:0;
-}
-
 .profile img{
 width:80px;
 height:80px;
 }
 
-.menu li{
-font-size:13px;
-}
-
-td{
-font-size:14px;
-padding:10px;
-}
-
 }
 
 </style>
+
 </head>
 
 <body>
@@ -198,7 +179,6 @@ padding:10px;
 
 </div>
 
-<ul class="menu">
 <ul class="menu">
 
 <li class="active" onclick="showPersonal()">👤 البيانات الأساسية</li>
@@ -286,52 +266,75 @@ padding:10px;
 </table>
 
 </div>
-<div class="card" id="grades" style="display:none; margin-top:20px;">
 
-<h3>تقديرات المقررات</h3>
+<div id="grades" style="display:none;">
 
+<div class="card">
+<h3>الأول 2024-2025</h3>
 <table>
-
 <tr>
-<td>المقرر</td>
+<td>كود المقرر</td>
+<td>اسم المقرر</td>
+<td>الساعات</td>
 <td>التقدير</td>
 </tr>
-
-<tr>
-<td>Dental Anatomy</td>
-<td>امتياز</td>
-</tr>
-
-<tr>
-<td>Oral Biology</td>
-<td>جيد جدًا</td>
-</tr>
-
-<tr>
-<td>Dental Materials</td>
-<td>جيد</td>
-</tr>
-
-<tr>
-<td>Biochemistry</td>
-<td>امتياز</td>
-</tr>
-
-<tr>
-<td>Physiology</td>
-<td>جيد جدًا</td>
-</tr>
-
 </table>
-
 </div>
 
+<div class="card">
+<h3>الثاني 2024-2025</h3>
+<table>
+<tr>
+<td>كود المقرر</td>
+<td>اسم المقرر</td>
+<td>الساعات</td>
+<td>التقدير</td>
+</tr>
+</table>
+</div>
+
+<div class="card">
+<h3>الصيفي 2024-2025</h3>
+<table>
+<tr>
+<td>كود المقرر</td>
+<td>اسم المقرر</td>
+<td>الساعات</td>
+<td>التقدير</td>
+</tr>
+</table>
+</div>
+
+<div class="card">
+<h3>الأول 2025-2026</h3>
+<table>
+<tr>
+<td>كود المقرر</td>
+<td>اسم المقرر</td>
+<td>الساعات</td>
+<td>التقدير</td>
+</tr>
+</table>
+</div>
+
+<div class="card">
+<h3>الثاني 2025-2026</h3>
+<table>
+<tr>
+<td>كود المقرر</td>
+<td>اسم المقرر</td>
+<td>الساعات</td>
+<td>التقدير</td>
+</tr>
+</table>
+</div>
+
+</div>
 <script>
 
 function showGrades(){
 
 document.getElementById("personalData").style.display="none";
-
 document.getElementById("grades").style.display="block";
 
 }
@@ -339,12 +342,12 @@ document.getElementById("grades").style.display="block";
 function showPersonal(){
 
 document.getElementById("grades").style.display="none";
-
 document.getElementById("personalData").style.display="block";
 
 }
 
 </script>
+
 </div>
 
 </div>
