@@ -199,14 +199,15 @@ padding:10px;
 </div>
 
 <ul class="menu">
+<ul class="menu">
 
-<li class="active">👤 البيانات الأساسية</li>
+<li class="active" onclick="showPersonal()">👤 البيانات الأساسية</li>
 <li>📋 التسجيل الأكاديمي</li>
 <li>📅 الجدول الدراسي</li>
 <li>💰 المصاريف الدراسية</li>
 <li>📄 تقرير الغياب</li>
 <li>📝 جدول الامتحانات</li>
-<li>📊 تقديرات المقررات</li>
+<li onclick="showGrades()">📊 تقديرات المقررات</li>
 <li>🎯 رغبات الالتحاق</li>
 <li>📑 نتيجة المقررات</li>
 <li>🔴 الإنذارات الأكاديمية</li>
@@ -217,7 +218,7 @@ padding:10px;
 
 <div class="content">
 
-<div class="card">
+<div class="card" id="personalData">
 
 <h3>البيانات الشخصية</h3>
 
@@ -285,7 +286,65 @@ padding:10px;
 </table>
 
 </div>
+<div class="card" id="grades" style="display:none; margin-top:20px;">
 
+<h3>تقديرات المقررات</h3>
+
+<table>
+
+<tr>
+<td>المقرر</td>
+<td>التقدير</td>
+</tr>
+
+<tr>
+<td>Dental Anatomy</td>
+<td>امتياز</td>
+</tr>
+
+<tr>
+<td>Oral Biology</td>
+<td>جيد جدًا</td>
+</tr>
+
+<tr>
+<td>Dental Materials</td>
+<td>جيد</td>
+</tr>
+
+<tr>
+<td>Biochemistry</td>
+<td>امتياز</td>
+</tr>
+
+<tr>
+<td>Physiology</td>
+<td>جيد جدًا</td>
+</tr>
+
+</table>
+
+</div>
+
+<script>
+
+function showGrades(){
+
+document.getElementById("personalData").style.display="none";
+
+document.getElementById("grades").style.display="block";
+
+}
+
+function showPersonal(){
+
+document.getElementById("grades").style.display="none";
+
+document.getElementById("personalData").style.display="block";
+
+}
+
+</script>
 </div>
 
 </div>
