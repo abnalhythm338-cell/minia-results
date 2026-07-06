@@ -130,17 +130,20 @@ color:#1565c0;
 @media (max-width:768px){
 
 .container{
-display:block;
+display:flex;
+flex-direction:row-reverse;
+align-items:flex-start;
+gap:10px;
 padding:10px;
 }
 
 .sidebar{
-width:100%;
-margin-bottom:15px;
+width:170px;
+min-width:170px;
 }
 
 .content{
-width:100%;
+flex:1;
 }
 
 .profile img{
@@ -157,7 +160,9 @@ font-size:14px;
 padding:10px;
 }
 
-}
+  }
+
+
 
 </style>
 </head>
