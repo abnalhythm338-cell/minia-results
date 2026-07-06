@@ -13,6 +13,20 @@
     font-family:Arial,sans-serif;
 }
 
+<script>
+function login(){
+
+let username = document.querySelector('input[type="text"]').value;
+let password = document.querySelector('input[type="password"]').value;
+
+if(username === "83436716" && password === "Sux9504"){
+    window.location.href = "result.html";
+}else{
+    alert("اسم المستخدم أو كلمة المرور غير صحيحة");
+}
+
+}
+</script>
 body{
     background:#f5f5f5;
     display:flex;
@@ -101,7 +115,7 @@ a{
 <label><input type="radio" name="type" checked> Student</label>
 </div>
 
-<button>LOG IN</button>
+<button onclick="login()">LOG IN</button>
 
 <a href="#">Forget Password ?</a>
 
