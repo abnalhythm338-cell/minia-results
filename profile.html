@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Student Portal</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Cairo,Tahoma,sans-serif;
+}
+
+body{
+background:#eef2f5;
+}
+
+.header{
+height:70px;
+background:#1565c0;
+color:white;
+display:flex;
+align-items:center;
+padding:0 25px;
+font-size:24px;
+font-weight:bold;
+}
+
+.container{
+display:flex;
+flex-direction:row-reverse;
+}
+
+.sidebar{
+
+width:300px;
+background:#dfe7ec;
+min-height:100vh;
+padding:20px;
+
+}
+
+.profile{
+
+background:white;
+border-radius:15px;
+padding:20px;
+text-align:center;
+box-shadow:0 0 10px rgba(0,0,0,.15);
+margin-bottom:25px;
+
+}
+
+.profile img{
+
+width:120px;
+height:120px;
+border-radius:50%;
+border:5px solid #2196f3;
+object-fit:cover;
+
+}
+
+.profile h2{
+
+margin-top:15px;
+font-size:20px;
+
+}
+
+.profile p{
+
+margin-top:8px;
+color:#555;
+
+}
+
+.menu{
+
+list-style:none;
+
+}
+
+.menu li{
+
+background:white;
+padding:15px;
+margin-bottom:12px;
+border-radius:10px;
+cursor:pointer;
+font-size:18px;
+transition:.3s;
+
+}
+
+.menu li:hover{
+
+background:#1976d2;
+color:white;
+
+}
+
+.active{
+
+background:#1976d2 !important;
+
+color:white;
+
+}
+
+.content{
+
+flex:1;
+
+padding:30px;
+
+}
+
+.card{
+
+background:white;
+
+border-radius:15px;
+
+box-shadow:0 0 10px rgba(0,0,0,.15);
+
+margin-bottom:25px;
+
+overflow:hidden;
+
+}
+
+.card h3{
+
+background:#1976d2;
+
+color:white;
+
+padding:15px;
+
+font-size:20px;
+
+}
+
+table{
+
+width:100%;
+
+border-collapse:collapse;
+
+}
+
+td{
+
+padding:15px;
+
+border-bottom:1px solid #eee;
+
+font-size:18px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+
+جامعة المنيا
+
+</div>
+
+<div class="container">
+
+<div class="sidebar">
+
+<div class="profile">
+
+<img src="bishoy.jpg">
+
+<h2>بيشوي سامح حكيم شكري</h2>
+
+<p>البرنامج: المتميز</p>
+
+<p>الكود: 83436716</p>
+
+</div>
+
+<ul class="menu">
+
+<li class="active">👤 البيانات الأساسية</li>
+
+<li>📋 التسجيل الأكاديمي</li>
+
+<li>📅 الجدول الدراسي</li>
+
+<li>💰 المصاريف الدراسية</li>
+
+<li>📄 تقرير الغياب</li>
+
+<li>📝 جدول الامتحانات</li>
+
+<li onclick="location.href='grades.html'">
+
+📊 تقديرات المقررات
+
+</li>
+
+<li>🎯 رغبات الالتحاق</li>
+
+<li>📑 نتيجة المقررات</li>
+
+<li>🔴 الإنذارات الأكاديمية</li>
+
+<li>🚫 إنذار طالب غير مسجل</li>
+
+<li>💳 إذن الدفع</li>
+
+<li>📚 تسجيل رغبات المقررات</li>
+
+<li>📋 استمارة التسجيل</li>
+
+</ul>
+
+</div>
+
+<div class="content">
+
+<div class="card">
+
+<h3>
+
+البيانات الشخصية
+
+</h3>
+
+<table>
+  <tr>
+<td><b>الاسم</b></td>
+<td>بيشوي سامح حكيم شكري</td>
+</tr>
+
+<tr>
+<td><b>الكود</b></td>
+<td>83436716</td>
+</tr>
+
+<tr>
+<td><b>الرقم القومي</b></td>
+<td>30409152601573</td>
+</tr>
+
+<tr>
+<td><b>تاريخ الميلاد</b></td>
+<td>15/09/2004</td>
+</tr>
+
+<tr>
+<td><b>النوع</b></td>
+<td>ذكر</td>
+</tr>
+
+<tr>
+<td><b>الديانة</b></td>
+<td>مسيحي</td>
+</tr>
+
+<tr>
+<td><b>الجنسية</b></td>
+<td>مصري</td>
+</tr>
+
+<tr>
+<td><b>الكلية</b></td>
+<td>طب الأسنان</td>
+</tr>
+
+<tr>
+<td><b>القسم</b></td>
+<td>المتميز</td>
+</tr>
+
+<tr>
+<td><b>الفرقة</b></td>
+<td>الثانية</td>
+</tr>
+
+<tr>
+<td><b>الفصل الدراسي</b></td>
+<td>الثاني</td>
+</tr>
+
+<tr>
+<td><b>العام الجامعي</b></td>
+<td>2025/2026</td>
+</tr>
+
+</table>
+
+</div>
+</div>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
