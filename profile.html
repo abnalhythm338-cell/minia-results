@@ -20,10 +20,8 @@ background:#eef2f5;
 .header{
 background:#1565c0;
 color:#fff;
-height:70px;
-display:flex;
-align-items:center;
-justify-content:center;
+padding:18px;
+text-align:center;
 font-size:28px;
 font-weight:bold;
 }
@@ -31,20 +29,19 @@ font-weight:bold;
 .container{
 display:flex;
 flex-direction:row-reverse;
-align-items:flex-start;
 gap:20px;
 padding:20px;
 max-width:1400px;
 margin:auto;
+overflow-x:auto;
 }
 
 .sidebar{
 width:260px;
-flex-shrink:0;
+min-width:260px;
 background:#dfe7ec;
 padding:20px;
 border-radius:15px;
-min-height:calc(100vh - 110px);
 }
 
 .profile{
@@ -100,13 +97,13 @@ color:#fff;
 
 .content{
 flex:1;
-min-width:0;
+min-width:700px;
 }
 
 .card{
 background:#fff;
 border-radius:15px;
-overflow:hidden;
+overflow-x:auto;
 box-shadow:0 2px 10px rgba(0,0,0,.15);
 }
 
@@ -119,6 +116,7 @@ font-size:22px;
 
 table{
 width:100%;
+min-width:650px;
 border-collapse:collapse;
 }
 
@@ -134,23 +132,22 @@ font-weight:bold;
 color:#1565c0;
 }
 
-table tr:hover{
+tr:hover{
 background:#f8fbff;
 }
 
-@media(max-width:900px){
+@media(max-width:768px){
 
 .container{
 overflow-x:auto;
 }
 
 .sidebar{
-width:250px;
+min-width:230px;
 }
 
-table{
-display:block;
-overflow-x:auto;
+.content{
+min-width:600px;
 }
 
 }
