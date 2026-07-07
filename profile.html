@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>بوابة الطالب</title>
 
 <style>
@@ -17,6 +19,8 @@ font-family:Cairo,Tahoma,sans-serif;
 body{
 background:#eef2f5;
 direction:rtl;
+overflow-x:auto;
+min-width:1100px;
 }
 
 .header{
@@ -32,42 +36,45 @@ font-weight:bold;
 display:flex;
 flex-direction:row-reverse;
 align-items:flex-start;
-gap:12px;
-padding:12px;
-max-width:1000px;
+gap:15px;
+padding:15px;
+width:1080px;
 margin:auto;
 }
 
 .sidebar{
-width:155px;
+width:220px;
 background:#dde5ea;
-border-radius:10px;
-padding:10px;
-flex-shrink:0;
+border-radius:12px;
+padding:15px;
 }
 
 .profile{
 background:#fff;
-border-radius:10px;
-padding:10px;
+border-radius:12px;
+padding:15px;
 text-align:center;
-margin-bottom:10px;
-box-shadow:0 2px 6px rgba(0,0,0,.15);
+margin-bottom:15px;
+box-shadow:0 2px 8px rgba(0,0,0,.15);
 }
 
 .profile img{
-width:75px;
-height:75px;
+width:90px;
+height:90px;
+border-radius:50%;
+border:4px solid #2196f3;
+object-fit:cover;
 }
 
 .profile h2{
-font-size:15px;
+font-size:18px;
+margin-top:10px;
 }
 
 .profile p{
-font-size:12px;
-margin-top:4px;
+font-size:13px;
 color:#666;
+margin-top:5px;
 }
 
 .menu{
@@ -76,10 +83,10 @@ list-style:none;
 
 .menu li{
 background:#fff;
-padding:8px;
-margin-bottom:6px;
+margin-bottom:8px;
+padding:10px;
 border-radius:8px;
-font-size:12px;
+font-size:14px;
 cursor:pointer;
 transition:.3s;
 }
@@ -92,22 +99,21 @@ color:#fff;
 
 .content{
 flex:1;
-max-width:780px;
 }
 
 .card{
 background:#fff;
-border-radius:10px;
-box-shadow:0 2px 6px rgba(0,0,0,.15);
+border-radius:12px;
 overflow:hidden;
-margin-bottom:15px;
+box-shadow:0 2px 8px rgba(0,0,0,.15);
+margin-bottom:20px;
 }
 
 .card h3{
 background:#1976d2;
 color:#fff;
-padding:10px;
-font-size:16px;
+padding:12px;
+font-size:18px;
 }
 
 table{
@@ -116,18 +122,19 @@ border-collapse:collapse;
 }
 
 td{
-padding:8px;
+padding:12px;
 border-bottom:1px solid #eee;
-font-size:13px;
+font-size:14px;
+text-align:center;
 }
 
 td:first-child{
 font-weight:bold;
 color:#1565c0;
-width:35%;
 }
 
 </style>
+
 </head>
 
 <body>
@@ -176,246 +183,96 @@ width:35%;
 <h3>البيانات الشخصية</h3>
 
 <table>
-<tr>
-<td>الاسم</td>
-<td>بيشوي سامح حكيم شكري</td>
-</tr>
 
-<tr>
-<td>الكود</td>
-<td>83436716</td>
-</tr>
-
-<tr>
-<td>الرقم القومي</td>
-<td>30409152601573</td>
-</tr>
-
-<tr>
-<td>تاريخ الميلاد</td>
-<td>15/09/2004</td>
-</tr>
-
-<tr>
-<td>النوع</td>
-<td>ذكر</td>
-</tr>
-
-<tr>
-<td>الديانة</td>
-<td>مسيحي</td>
-</tr>
-
-<tr>
-<td>الجنسية</td>
-<td>مصري</td>
-</tr>
-
-<tr>
-<td>الكلية</td>
-<td>طب الأسنان</td>
-</tr>
-
-<tr>
-<td>القسم</td>
-<td>المتميز</td>
-</tr>
-
-<tr>
-<td>الفرقة</td>
-<td>الثانية</td>
-</tr>
-
-<tr>
-<td>الفصل الدراسي</td>
-<td>الثاني</td>
-</tr>
-
-<tr>
-<td>العام الجامعي</td>
-<td>2025 / 2026</td>
-</tr>
+<tr><td>الاسم</td><td>بيشوي سامح حكيم شكري</td></tr>
+<tr><td>الكود</td><td>83436716</td></tr>
+<tr><td>الرقم القومي</td><td>30409152601573</td></tr>
+<tr><td>تاريخ الميلاد</td><td>15/09/2004</td></tr>
+<tr><td>النوع</td><td>ذكر</td></tr>
+<tr><td>الديانة</td><td>مسيحي</td></tr>
+<tr><td>الجنسية</td><td>مصري</td></tr>
+<tr><td>الكلية</td><td>طب الأسنان</td></tr>
+<tr><td>القسم</td><td>المتميز</td></tr>
+<tr><td>الفرقة</td><td>الثانية</td></tr>
+<tr><td>الفصل الدراسي</td><td>الثاني</td></tr>
+<tr><td>العام الجامعي</td><td>2025 / 2026</td></tr>
 
 </table>
 
 </div>
 
 <div id="grades" style="display:none;">
-
 <div class="card">
 <h3>الأول 2024-2025</h3>
 
 <table>
-
 <tr>
 <td>اسم المادة</td>
 <td>الساعات</td>
 <td>التقدير</td>
 </tr>
 
-<tr>
-<td>تشريح عام</td>
-<td>4</td>
-<td>Fr</td>
-</tr>
-
-<tr>
-<td>هستولوجيا عامة</td>
-<td>3</td>
-<td>D+</td>
-</tr>
-
-<tr>
-<td>تشريح وصفي</td>
-<td>6</td>
-<td>F</td>
-</tr>
-
-<tr>
-<td>فسيولوجيا عامة</td>
-<td>4</td>
-<td>Fr</td>
-</tr>
-
-<tr>
-<td>كيمياء</td>
-<td>6</td>
-<td>P</td>
-</tr>
-
-<tr>
-<td>علم الكمبيوتر</td>
-<td>3</td>
-<td>P</td>
-</tr>
-
-<tr>
-<td>علم الوراثة</td>
-<td>2</td>
-<td>NP</td>
-</tr>
-
-<tr>
-<td>اللغة الإنجليزية</td>
-<td>2</td>
-<td>P</td>
-</tr>
-
+<tr><td>تشريح عام</td><td>4</td><td>Fr</td></tr>
+<tr><td>هستولوجيا عامة</td><td>3</td><td>D+</td></tr>
+<tr><td>تشريح وصفي</td><td>6</td><td>F</td></tr>
+<tr><td>فسيولوجيا عامة</td><td>4</td><td>Fr</td></tr>
+<tr><td>كيمياء</td><td>6</td><td>P</td></tr>
+<tr><td>علم الكمبيوتر</td><td>3</td><td>P</td></tr>
+<tr><td>علم الوراثة</td><td>2</td><td>NP</td></tr>
+<tr><td>اللغة الإنجليزية</td><td>2</td><td>P</td></tr>
 </table>
+</div>
 
 <div class="card">
-
 <h3>الثاني 2024-2025</h3>
 
 <table>
-
 <tr>
 <td>اسم المادة</td>
 <td>الساعات</td>
 <td>التقدير</td>
 </tr>
 
-<tr>
-<td>الليزر في طب الأسنان</td>
-<td>1</td>
-<td>P</td>
-</tr>
-
-<tr>
-<td>تشريح عام</td>
-<td>4</td>
-<td>Fr</td>
-</tr>
-
-<tr>
-<td>فسيولوجيا عامة</td>
-<td>4</td>
-<td>D+</td>
-</tr>
-
-<tr>
-<td>هستولوجيا عامة</td>
-<td>3</td>
-<td>D+</td>
-</tr>
-
-<tr>
-<td>كيمياء عضوية</td>
-<td>4</td>
-<td>C+</td>
-</tr>
-
-<tr>
-<td>أساسيات المواد الحيوية</td>
-<td>4</td>
-<td>F</td>
-</tr>
-
+<tr><td>الليزر في طب الأسنان</td><td>1</td><td>P</td></tr>
+<tr><td>تشريح عام</td><td>4</td><td>Fr</td></tr>
+<tr><td>فسيولوجيا عامة</td><td>4</td><td>D+</td></tr>
+<tr><td>هستولوجيا عامة</td><td>3</td><td>D+</td></tr>
+<tr><td>كيمياء عضوية</td><td>4</td><td>C+</td></tr>
+<tr><td>أساسيات المواد الحيوية</td><td>4</td><td>F</td></tr>
 </table>
+</div>
+
 <div class="card">
 <h3>الصيفي 2024-2025</h3>
 
 <table>
-
 <tr>
 <td>اسم المادة</td>
 <td>الساعات</td>
 <td>التقدير</td>
 </tr>
 
-<tr>
-<td>تشريح وصفي</td>
-<td>6</td>
-<td>Fr</td>
-</tr>
-
+<tr><td>تشريح وصفي</td><td>6</td><td>Fr</td></tr>
 </table>
+</div>
 
 <div class="card">
 <h3>الأول 2025-2026</h3>
 
 <table>
-
 <tr>
 <td>اسم المادة</td>
 <td>الساعات</td>
 <td>التقدير</td>
 </tr>
 
-<tr>
-<td>فسيولوجيا عامة</td>
-<td>4</td>
-<td>D</td>
-</tr>
-
-<tr>
-<td>ميكروبيولوجي</td>
-<td>3</td>
-<td>C</td>
-</tr>
-
-<tr>
-<td>باثولوجيا عامة</td>
-<td>5</td>
-<td>D</td>
-</tr>
-
-<tr>
-<td>فارماكولوجي</td>
-<td>4</td>
-<td>C</td>
-</tr>
-
-<tr>
-<td>تكنولوجيا الاستعاضة الصناعية</td>
-<td>5</td>
-<td>Fr</td>
-</tr>
-
+<tr><td>فسيولوجيا عامة</td><td>4</td><td>D</td></tr>
+<tr><td>ميكروبيولوجي</td><td>3</td><td>C</td></tr>
+<tr><td>باثولوجيا عامة</td><td>5</td><td>D</td></tr>
+<tr><td>فارماكولوجي</td><td>4</td><td>C</td></tr>
+<tr><td>تكنولوجيا الاستعاضة الصناعية</td><td>5</td><td>Fr</td></tr>
 </table>
-
-<div class="card">
-<div class="card">
+</div>
 <div class="card">
 <h3>الثاني 2025-2026</h3>
 
@@ -466,23 +323,19 @@ width:35%;
 </table>
 
 </div>
-</div>
 
 </div>
+
 <script>
 
 function showGrades(){
-
 document.getElementById("personalData").style.display="none";
 document.getElementById("grades").style.display="block";
-
 }
 
 function showPersonal(){
-
 document.getElementById("grades").style.display="none";
 document.getElementById("personalData").style.display="block";
-
 }
 
 </script>
@@ -492,5 +345,4 @@ document.getElementById("personalData").style.display="block";
 </div>
 
 </body>
-
 </html>
